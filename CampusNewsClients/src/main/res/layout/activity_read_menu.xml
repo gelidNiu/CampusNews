@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:id="@+id/read_ll_bottom_menu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:clickable="true"
+        android:layout_alignParentBottom="true"
+        android:background="@color/nb.read.menu.bg"
+        tools:visibility="visible">
+
+
+        <!--菜单栏-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="72dp"
+            android:orientation="horizontal"
+            android:paddingTop="12dp"
+            android:paddingBottom="12dp"
+            >
+            <TextView
+                style="@style/NB.Theme.TextAppearance.Read.BottomMenu.Button"
+                android:id="@+id/read_tv_category"
+                android:drawableTop="@drawable/ic_read_menu_category"
+                android:text="目录" />
+
+            <TextView
+                style="@style/NB.Theme.TextAppearance.Read.BottomMenu.Button"
+                android:id="@+id/read_tv_night_mode"
+                android:drawableTop="@drawable/ic_read_menu_night"
+                android:text="夜间" />
+
+            <TextView
+                style="@style/NB.Theme.TextAppearance.Read.BottomMenu.Button"
+                android:id="@+id/read_tv_setting"
+                android:drawableTop="@drawable/ic_read_menu_font"
+                android:text="设置" />
+        </LinearLayout>
+    </LinearLayout>
+
+</FrameLayout>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_find_questions"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <android.support.v7.widget.Toolbar
+        android:background="#f4f4f4"
+        app:navigationIcon="@mipmap/gray_back_mipmap"
+        android:id="@+id/tool_bar"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        app:theme="@style/AppTheme.NoActionBar"
+        >
+        <TextView
+            android:textSize="20sp"
+            android:text="淘题"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            />
+        <ImageView
+            android:id="@+id/iv_add_questions"
+            android:src="@mipmap/blue_add_mipmap"
+            android:textSize="20sp"
+            android:text="淘题"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            />
+    </android.support.v7.widget.Toolbar>
+    <com.baibian.view.LunBa.ListenerScrollView
+        android:id="@+id/scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:animateLayoutChanges="true"
+            android:orientation="vertical"
+            android:id="@+id/question_father_view_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </LinearLayout>
+    </com.baibian.view.LunBa.ListenerScrollView>
+
+
+</LinearLayout>

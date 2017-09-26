@@ -1,0 +1,75 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/fragment_group_chat_root"
+    tools:context="com.baibian.fragment.messy_fiction.GroupChatFragment">
+
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:animateLayoutChanges="true"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/fragment_group_chat_list"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content">
+
+        </android.support.v7.widget.RecyclerView>
+        <View
+            android:background="#f5f5f5"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"/>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:textColor="@color/white"
+                android:text="加    入   群   聊"
+                android:textSize="16sp"
+                android:background="#47bafe"
+                android:id="@+id/fragment_group_chat_involve_btn"
+                android:layout_alignParentBottom="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <android.support.v7.widget.RecyclerView
+                android:layout_alignParentTop="true"
+                android:id="@+id/fragment_group_chat_right_list"
+                android:layout_above="@id/fragment_group_chat_involve_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            </android.support.v7.widget.RecyclerView>
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/fragment_group_chat_notice_fail"
+        android:text="加载失败"
+        android:visibility="gone"
+        android:layout_centerInParent="true"
+        android:textColor="?attr/colorValue"
+        android:textSize="16sp"
+        android:layout_marginEnd="100dp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentEnd="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <ProgressBar
+        android:visibility="gone"
+        android:id="@+id/fragment_group_chat_load_bar"
+        android:layout_marginEnd="100dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_alignParentEnd="true" />
+
+</RelativeLayout>

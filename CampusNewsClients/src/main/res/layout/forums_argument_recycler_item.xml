@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?><!--论点界面-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/forums_argument_item_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingTop="5dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:descendantFocusability="blocksDescendants"
+        android:orientation="vertical"
+        android:paddingTop="5dp">
+
+        <LinearLayout
+            android:id="@+id/forums_top_linearlayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="11dp"
+            android:layout_marginRight="11dp"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:descendantFocusability="afterDescendants">
+
+                <TextView
+                    android:id="@+id/forums_argument_title_tv"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="11dp"
+                    android:layout_weight="1"
+                    android:text="题目"
+                    android:textColor="@color/black"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/dislike_tv"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="bottom"
+                    android:gravity="bottom|center_horizontal"
+                    android:text="×"
+                    android:textSize="20sp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/forums_argument_content_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="4dp"
+                android:text="  权利天赋即自然权利（Natural Right），最早的表述或来自古希腊斯多噶学派，强调人类在自然状态下固有的，神圣不可侵犯和剥夺的权利。因此，人类的权利来自天然，所以一切..." />
+        </LinearLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/forums_second_linearlayout"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_below="@id/forums_top_linearlayout"
+            android:layout_marginStart="2dp"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal"
+            android:descendantFocusability="afterDescendants">
+
+            <TextView
+                android:id="@+id/forums_perfect_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentStart="true"
+                android:layout_marginLeft="11dp"
+                android:text="完善值" />
+
+            <TextView
+                android:id='@+id/forums_perfect_num_tv'
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/forums_perfect_tv"
+                android:text="0k" />
+
+            <TextView
+                android:id="@+id/forums_concentrate_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentEnd="true"
+                android:layout_marginRight="14dp"
+                android:text="关注论点" />
+        </RelativeLayout>
+        <!--使用text布局来实现-->
+        <LinearLayout
+            android:id="@+id/forums_progressbar_linearlayout"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_below="@id/forums_second_linearlayout"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:id="@+id/progress_relativelayout1"
+
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@drawable/left_radius_background">
+
+                <TextView
+                    android:id="@+id/progress_text1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_centerHorizontal="true"
+                    android:textColor="#101010"
+                    android:textSize="13sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/progress_relativelayout2"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@color/progressbar_secondary">
+
+                <TextView
+                    android:id="@+id/progress_text2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_centerHorizontal="true"
+                    android:textColor="#101010"
+                    android:textSize="13sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/progress_relativelayout3"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@drawable/right_radius_background">
+
+                <TextView
+                    android:id="@+id/progress_text3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_centerHorizontal="true"
+                    android:textColor="#101010"
+                    android:textSize="13sp" />
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <ImageView
+        style="@style/left_drawer_item_line"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp" />
+
+
+</LinearLayout>

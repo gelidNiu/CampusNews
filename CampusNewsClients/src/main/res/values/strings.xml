@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="title">以成败论英雄是一种价值观</string>
+    <string name="share">分享</string>
+    <string name="order">筛选</string>
+    <string name="report">举报</string>
+    <string name="history">历史版本</string>
+    <string name="example">这是一句宇宙无敌金色闪光bug退散的超强样例这是一句宇宙无敌金色闪光bug退散的超强样例这是一句宇宙无敌金色闪光bug退散的超强样例</string>
+
+    <string name="night_action_settings">Settings!</string>
+    <string name="recycler_undo_text_content"><u>您可以在回收站撤销最近15天的内容</u></string>
+    <string name="expand_text"><u>展开</u></string>
+    <string name="collaps_text"><u>收缩</u></string>
+    <string name="title_activity_setting_send">推送设置</string>
+    <string name="message_solid_collapse"><u>收起消息</u></string>
+
+    <string name="concentrate_debate">+关注辩题</string>
+    <string name="change">仍要修改</string>
+    <string name="publish_newIdeas">发表新论点</string>
+    <string name="remind_content">如果您的修改存在 以下情况:\n
+1、改变论点原有立场。\n
+2、针对其他用户。\n
+3、大量的删除与增加。\n
+将会影响其他用户的发言，并有被建议修改的可能，建议您可以发表新的论点。</string>
+    <string name="do_not_remind">不再提示</string>
+    <string name="remind">提示</string>
+    <string name="self_contradiction">自我矛盾</string>
+    <string name="double_standard">双重标准</string>
+    <string name="analogy">类比不当</string>
+    <string name="wrong_data">资料有误</string>
+    <string name="unsuitable_example">举例不当</string>
+    <string name="sampling_bias">以偏概全</string>
+    <string name="upsidedown_causeAndEffect">因果颠倒</string>
+    <string name="irrelevant_causeAndEffect">因果无关</string>
+    <string name="wrongPremise">前提有误</string>
+    <string name="wrongConcept">概念有误</string>
+    <string name="ask">提问</string>
+    <string name="submit">提交</string>
+    <string name="objection">异议</string>
+    <string name="refresh_data">更新了5条数据</string>
+    <string name="forums_details">辩题详情</string>
+    <string name="loading">正在努力加载...</string>
+    <string name="concentrate">关注论点</string>
+    <string name="finish"><u>完成</u></string>
+    <string name="dislike_reason">选择不喜欢的原因，优化推荐</string>
+    <string name="have_concentrate">已关注</string>
+    <string name="not_concentrate">＋   关注</string>
+    <string name="model1">深入论证如层层剥笋，步步为营严密论证，方能逼近事理本质。</string>
+    <string name="noMoreWords">最多50字</string>
+    <string name="details">对论点的详细论证:</string>
+    <string name="summary">请输入对论点的一句话总结:</string>
+    <string name="noMore">没有更多内容啦</string>
+    <string name="publish">发表论点</string>
+    <string name="approve">赞成</string>
+    <string name="oppose">反对</string>
+    <string name="choose_exist_objection">选择已有异议作为完善理由</string>
+    <string name="choose_new_objection">填写新的异议作为完善理由</string>
+    <string name="explain_argument_edt_hint">具体说明。10字以上，100字以内</string>
+    <string name="sketch_argument_edt_hint">简述观点。38字以内</string>
+    <string name="app_name">论道</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="left_drawer_no_login_tip">登录后，将推荐给你更多感兴趣的文章</string>
+    <string name="left_drawer_item_focus">我的关注</string>
+    <string name="left_drawer_item_favorite">我的收藏</string>
+    <string name="left_drawer_item_book">我的书架</string>
+    <string name="left_drawer_item_history_read">历史浏览</string>
+    <string name="left_drawer_item_offline_cancel">取消离线</string>
+    <string name="left_drawer_item_help">反馈与帮助</string>
+    <string name="left_drawer_item_setting">设置</string>
+    <string name="left_drawer_item_feedback">反馈</string>
+    <string name="left_drawer_item_appstore">精彩应用</string>
+    <string name="drawer_right_logout_hint_text">"登录后 可关注好友评论和收藏        （测试项目，严禁传播；如有侵权请联系QQ1142182057删除。）"</string>
+    <string name="drawer_right_tip_no_login">未登录</string>
+    <!--<string name="ss_pattern_update">发现%1$d条更新</string>-->
+    <string name="ss_have_a_rest">暂无更新, 休息一会儿</string>
+    <string name="action_night_mode">夜间模式</string>
+    <string name="action_day_mode">日间模式</string>
+    <string name="setting_list_mode">列表显示摘要</string>
+    <string name="setting_font_size">字体大小</string>
+    <string name="setting_list_comment">列表页评论</string>
+    <string name="setting_refresh_list">列表页刷新</string>
+    <string name="setting_load_image">2G/3G网络流量</string>
+    <string name="setting_notify">推送通知</string>
+    <string name="setting_interactive">互动插件</string>
+    <string name="setting_share_when_favor">收藏时转发</string>
+    <string name="setting_share_when_diggbury">顶踩时转发</string>
+    <string name="setting_clear">清理缓存</string>
+    <string name="setting_feedback">意见反馈</string>
+    <string name="setting_recommend">精彩应用推荐</string>
+    <string name="setting_update">检查新版本</string>
+    <string name="setting_night_mode">夜间模式</string>
+    <string name="setting_use_swipe">左右翻页</string>
+    <string name="setting_switch_domain">启动网络调试</string>
+    <string name="setting_close_shake_hand">关闭摇一摇切换夜间模式</string>
+    <string name="setting_use_help">使用帮助</string>
+    <string name="app_copyright">© CSDN csdn.com（Sisyphus测试项目，严禁传播）</string>
+    <string name="favorite_btn_delete">删除</string>
+    <string name="favorite_btn_edit">编辑</string>
+    <string name="favorite_btn_cancel">取消</string>
+    <string name="dislike_dlg_lable_speech">读文章</string>
+    <string name="drawer_btn_rss">频道管理</string>
+    <string name="subscribe_my_category">我的频道</string>
+    <string name="subscribe_more_category">更多频道</string>
+    <string name="subscribe_manager_category_info">单击增删频道</string>
+    <string name="subscribe_manager_category_info_2">单击增删频道，长按拖拽排序</string>
+    <string name="label_cancel_dislike">撤消</string>
+    <string name="day_today">今天</string>
+    <string name="day_yesterday">昨天</string>
+    <string name="day_before">前天</string>
+    <string name="search_count_fmt">发现%1$s篇文章</string>
+    <string name="ss_pattern_update">发现%1$d条更新</string>
+    <string name="pattern_update">发现%1$d条更新</string>
+    <string name="city_category_list_header">点击选择其他城市</string>
+    <string name="city_category_list_hint">选择城市，立即查看本地新闻</string>
+    <string name="city_category_list_notify_no_city">请先选择您关注的城市</string>
+    <string name="retry_large_image"><u>加载失败，点击重试</u></string>
+    <string name="register_name_digits">._0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLIMNOPQRSTUVWXYZ@</string>
+    <string name="please6to16">请输入6~16位密码</string>
+    <string name="please_account">请输入正确账号</string>
+    <string name="login_succeed">登录成功</string>
+    <string name="REGISTER">注册</string>
+    <string name="forget_password">忘记密码</string>
+    <string name="different_password">俩次输入的密码不一样</string>
+    <string name="sure_exit">确定要退出Bai辩吗？</string>
+    <string name="frindly_reminder">友情提示</string>
+    <string name="sure">确定</string>
+    <string name="cancel">取消</string>
+    <string name="Press_again_to_exit">再按一次退出</string>
+    <string name="close_Baibai">关闭Bai辩</string>
+    <string name="exit_not_account">注销当前账号</string>
+
+
+    <string name="integration">综合</string>
+    <string name="hot">热门</string>
+    <string name="real_time">实时</string>
+    <string name="classification">分类</string>
+    <string name="focus">关注</string>
+
+    <string name="reflesh">更新了5条数据</string>
+    <string name="load_more">上拉加载更多...</string>
+    <string name="loading_more">正在加载更多数据...</string>
+    <string name="BBstate">BB发言</string>
+    <string name="BBimformation">BB资料</string>
+    <string name="maxadd">最多添加</string>
+    <string name="maxadd2">个~</string>
+    <string name="account_or_password_error">帐号或密码错误,请重新输入</string>
+    <string name="signIn_OK">登录成功</string>
+    <string name="timeout">网络错误，请检查网络</string>
+    <string name="signUp_OK">注册成功</string>
+    <string name="haved_account">该账号已存在</string>
+    <string name="detaildivide">论点</string>
+    <string name="debatetopic">辩题背景</string>
+    <string name="text_topic">人权天赋还是取决自己</string>
+    <string name="LunBa">论吧</string>
+    <string name="LunGe">论阁</string>
+    <string name="LunXun">论讯</string>
+    <string name="reGetCode">重新获取</string>
+    <string name="timer">倒计时</string>
+    <string name="second">秒</string>
+    <string name="text_point">·</string>
+    <string name="edit_personal_signal">编辑个性签名</string>
+    <string name="user_share_divider_text">·我的分享·</string>
+    <string name="portrait_image_save_file_dir_name">LunDao</string>
+    <string name="portrait_image_save_file_name">head_portrait</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="open">打开</string>
+    <string name="close">关闭</string>
+
+
+    <!--read-->
+    <string name="nb.read.community">社区</string>
+    <string name="nb.read.brief">简介</string>
+    <string name="nb.read.setting">设置</string>
+    <string name="nb.read.download">缓存</string>'
+    <string name="nb.read.category">目录</string>
+    <string name="night">夜间</string>
+    <string name="morning">日间</string>
+    <string name="LunTan">论坛</string>
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="portrait">头像</string>
+    <string name="signature">签名</string>
+    <string name="nick_name">昵称</string>
+    <string name="gender">性别</string>
+    <string name="birth_date">生日</string>
+    <string name="phone_number">手机号</string>
+    <string name="email_number">邮箱号</string>
+    <string name="residence">居住地</string>
+    <string name="test_picture_address"><![CDATA[https://www.duitang.com/redirect/?to=http%3A%2F%2Fwww.duitang.com%2Fredirect%2F%3Fto%3Dhttp%253A%252F%252Fimage.baidu.com%252Fsearch%252Fdetail%253Fz%253D0%2526amp%253Bipn%253Dd%2526amp%253Bword%253D%2525E8%25258A%2525B1%2525E7%2525BA%2525B9%2525E8%2525BE%2525B9%2525E6%2525A1%252586%2525E7%2525B4%2525A0%2525E6%25259D%252590%2526amp%253Bstep_word%253D%2526amp%253Bpn%253D1%2526amp%253Bspn%253D0%2526amp%253Bdi%253D0%25CF%2580%253D%2526amp%253Btn%253Dbaiduimagedetail%2526amp%253Bistype%253D0%2526amp%253Bie%253Dutf-8%2526amp%253Boe%253Dutf-8%2526amp%253Bcs%253D563744319%25252C3345987419%2526amp%253Bos%253D37734369%25252C175739037%2526amp%253Bsimid%253D%2526amp%253Badpicid%253D0%2526amp%253Bfr%253D%2526amp%253Bfm%253D%2526amp%253Bsme%253D%2526amp%253Bcg%253D%2526amp%253Bbdtype%253D14%2526amp%253Bsimics%253D2274027438%25252C2372038421%2526amp%253Boriquery%253D%2526amp%253Bobjurl%253Dhttp%25253A%25252F%25252Fpic32.nipic.com%25252F20130731%25252F3326595_172707108000_2.jpg%2526amp%253Bfromurl%253Dippr_z2C%252524qAzdH3FAzdH3Fooo_z%252526e3Bgtrtv_z%252526e3Bv54AzdH3Ffi5oAzdH3FnAzdH3F880AzdH3Fbmnamnn_z%252526e3Bip4s%2526amp%253Bgsm%253D0%2526amp%253Bcardserver%253D1%26app_code%3D&mk=bd_np_544407587]]></string>
+
+    <string name="title_activity_fullscreen_scoop">FullscreenScoopActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="buy_detail_declaration"><u>购买详情说明</u></string>
+
+    <string name="head">这里是HeadView</string>
+    <string name="pull_to_refresh">下拉刷新</string>
+    <string name="release_to_refresh">释放立即刷新</string>
+    <string name="refreshing">正在刷新...</string>
+    <string name="refresh_succeed">刷新成功</string>
+    <string name="refresh_fail">刷新失败</string>
+    <string name="pullup_to_load">上拉加载更多</string>
+    <string name="release_to_load">释放立即加载</string>
+    <string name="load_succeed">加载成功</string>
+    <string name="load_fail">加载失败</string>
+
+    <string name="collect">收藏</string>
+    <string name="collected">已收藏</string>
+    <string name="title_activity_initiate_debate">InitiateDebateActivity</string>
+</resources>

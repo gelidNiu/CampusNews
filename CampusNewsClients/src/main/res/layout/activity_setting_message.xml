@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.baibian.activity.user_drawer.user_setting.SettingMessageActivity">
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/setting_message_app_bar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize">
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/setting_message_tool_bar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:navigationIcon="@mipmap/gray_back_mipmap"
+            app:title="消息设置">
+        </android.support.v7.widget.Toolbar>
+    </android.support.design.widget.AppBarLayout>
+    <LinearLayout
+        android:divider="@drawable/divider_bg"
+        android:showDividers="middle|end"
+        android:layout_marginTop="3dp"
+        android:padding="15dp"
+        android:layout_below="@id/setting_message_app_bar"
+        android:id="@+id/setting_message_switches_layout"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.baibian.view.special_use_view.SettingSwitchView
+            app:declaration_text="有人让我蛤蛤蛤蛤"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </com.baibian.view.special_use_view.SettingSwitchView>
+
+        <com.baibian.view.special_use_view.SettingSwitchView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </com.baibian.view.special_use_view.SettingSwitchView>
+
+        <com.baibian.view.special_use_view.SettingSwitchView
+            app:declaration_text="有人让我蛤蛤蛤蛤"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </com.baibian.view.special_use_view.SettingSwitchView>
+    </LinearLayout>
+</RelativeLayout>

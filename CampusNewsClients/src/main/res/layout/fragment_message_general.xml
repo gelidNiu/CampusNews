@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#47BAFE">
+
+    <RelativeLayout
+        android:visibility="invisible"
+        android:id="@+id/content_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/content_title"
+            android:text="成败英雄论是否可取"
+            android:textColor="#ffffff"
+            android:layout_marginTop="15dp"
+            android:layout_marginStart="20dp"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/content_began"
+            android:layout_below="@id/content_title"
+            android:textStyle="bold"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="10dp"
+            android:text="开辩啦！"
+            android:textColor="#ffe03b"
+            android:textSize="21sp"
+            android:layout_marginTop="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/content_new_emerged"
+            android:layout_below="@id/content_title"
+            android:textStyle="bold"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="10dp"
+            android:text="有新的论点"
+            android:textColor="#5d54ff"
+            android:textSize="21sp"
+            android:layout_marginTop="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:visibility="visible"
+        android:id="@+id/user_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_marginTop="15dp"
+            android:layout_marginStart="20dp"
+            android:id="@+id/user_user"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:textColor="#ffffff"
+            android:text="您关注的用户"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:visibility="invisible"
+            android:textStyle="bold"
+            android:layout_marginTop="15dp"
+            android:layout_marginStart="20dp"
+            android:id="@+id/user_user_2"
+            android:textSize="18sp"
+            android:textColor="#ffffff"
+            android:text="您被"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/user_user_name"
+            android:textSize="21sp"
+            android:textStyle="bold"
+            android:layout_marginStart="10dp"
+            android:layout_alignBottom="@id/user_user"
+            android:text="花生酱"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_toEndOf="@id/user_user"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:visibility="invisible"
+            android:id="@+id/user_focused_2"
+            android:textColor="#ffffff"
+            android:textSize="21sp"
+            android:layout_below="@id/user_user_name"
+            android:layout_toEndOf="@id/user_user_name"
+            android:text="关注啦！！！"
+            android:textStyle="bold"
+            android:layout_marginStart="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:text="参与了辩题"
+            android:textColor="#ffffff"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginTop="5dp"
+            android:layout_below="@id/user_user_2"
+            android:layout_alignStart="@id/user_user_2"
+            android:id="@+id/user_attend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/user_attend_content"
+            android:layout_toEndOf="@id/user_attend"
+            android:layout_alignBottom="@id/user_attend"
+            android:layout_marginStart="10dp"
+            android:text="成败英雄论"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="18sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/click_to_see"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@id/user_message"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="10dp"
+        android:text="点击查看"
+        android:textSize="16sp"
+        android:textColor="#ffffff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</RelativeLayout>

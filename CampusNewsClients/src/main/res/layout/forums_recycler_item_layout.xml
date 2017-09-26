@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--论点界面-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:paddingTop="5dp"
+    android:id="@+id/forums_item_all_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+    <ImageView style="@style/left_drawer_item_line" />
+
+
+        <RelativeLayout
+            android:paddingTop="5dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:descendantFocusability="afterDescendants">
+               <ImageView
+                   android:layout_width="20dp"
+                   android:layout_height="match_parent"
+                   android:src="@drawable/forums_light"
+                   />
+                <TextView
+                    android:id="@+id/integration_dislike_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textSize="18sp"
+                    android:text="×"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="10dp"
+                    />
+            </RelativeLayout>
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:id="@+id/forums_top_linearlayout"
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="11dp"
+                android:layout_marginRight="11dp">
+                <TextView
+                    android:id="@+id/item_tv"
+                    android:text="题目"
+                    android:layout_gravity="center_vertical"
+                    android:textSize="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:layout_marginLeft="11dp"/>
+                <TextView
+                    android:paddingTop="4dp"
+                    android:text="  权利天赋即自然权利（Natural Right），最早的表述或来自古希腊斯多噶学派，强调人类在自然状态下固有的，神圣不可侵犯和剥夺的权利。因此，人类的权利来自天然，所以一切..."
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+
+
+                <RelativeLayout
+                    android:id="@+id/forums_second_linearlayout"
+                    android:layout_below="@id/forums_top_linearlayout"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:layout_marginStart="11dp"
+                    android:layout_marginEnd="11dp"
+                    android:descendantFocusability="afterDescendants"
+                    >
+                  <ImageView
+                      android:id='@+id/forums_scan_img'
+                      android:layout_width="20dp"
+                      android:layout_height="20dp"
+                      android:src="@mipmap/img_forums_concentrate"
+                      android:layout_alignParentStart="true"/>
+                    <TextView
+                        android:id="@+id/forums_scan_num_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="20dp"
+                        android:text="253"
+                        android:layout_toRightOf="@+id/forums_scan_img"
+                        android:layout_marginEnd="10dp"/>
+                    <ImageView
+                        android:id="@+id/forums_praise_img"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@mipmap/img_forums_praise"
+                        android:layout_centerInParent="true"/>
+                    <TextView
+                        android:id="@+id/forums_praise_num_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="20dp"
+                        android:text="666"
+                        android:layout_toRightOf="@+id/forums_praise_img"
+                        android:layout_marginLeft="10dp"
+                        />
+                    <TextView
+                        android:id="@+id/forums_concentrate_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="20dp"
+                        android:text="@string/concentrate_debate"
+                        android:layout_alignParentRight="true"
+                        android:gravity="center"/>
+                </RelativeLayout>
+            <!--使用text布局来实现-->
+            <LinearLayout
+                android:id="@+id/forums_progressbar_linearlayout"
+                android:layout_below="@id/forums_second_linearlayout"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="0dp">
+                <RelativeLayout
+                    android:id="@+id/progress_relativelayout1"
+
+                    android:background="@drawable/left_radius_background"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:layout_centerHorizontal="true"
+                        android:textSize="13sp"
+                        android:id="@+id/progress_text1"
+                        android:textColor="#101010"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"/>
+                </RelativeLayout>
+                <RelativeLayout
+                    android:id="@+id/progress_relativelayout2"
+                    android:background="@color/progressbar_secondary"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent">
+                    <TextView
+                    android:textSize="13sp"
+                        android:layout_centerHorizontal="true"
+                    android:id="@+id/progress_text2"
+                    android:textColor="#101010"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/progress_relativelayout3"
+                    android:background="@drawable/right_radius_background"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent">
+                    <TextView
+                    android:textSize="13sp"
+                     android:layout_centerHorizontal="true"
+                    android:id="@+id/progress_text3"
+                    android:textColor="#101010"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"/>
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+
+
+
+</LinearLayout>

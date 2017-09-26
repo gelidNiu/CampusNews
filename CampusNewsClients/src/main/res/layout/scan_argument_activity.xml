@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <!--左侧布局-->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@color/theme_blue"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:id="@+id/argument_back_img"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center_vertical"
+                    android:src="@mipmap/back_white" />
+                <!--具有走马灯效果的textview-->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:ellipsize="marquee"
+                    android:gravity="center"
+                    android:marqueeRepeatLimit="marquee_forever"
+                    android:maxLines="1"
+                    android:text="对该论点提交完善版本"
+                    android:textColor="@color/white"
+                    android:textSize="23sp" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/arument_edit_img"
+                android:layout_width="43dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:padding="10dp"
+                android:src="@mipmap/argument_edit_img" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentStart="true"
+                android:gravity="center"
+                android:text="当前版本 :"
+                android:textColor="@color/white"
+                android:textSize="23sp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="5dp"
+                android:layout_marginTop="15dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="bottom"
+                    android:text="当前贡献榜"
+                    android:textColor="@color/white" />
+                <!--下划线待解决-->
+                <View
+                    android:layout_width="75dp"
+                    android:layout_height="1dp"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@color/white" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <com.baibian.view.MyScrollView
+            android:id="@+id/original_argument"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="10dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingTop="10dp"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/original_argument_edt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:cursorVisible="false"
+                    android:enabled="false"
+                    android:text="    权利天赋即自然权利（Natural Right），最早的表述或来自古希腊斯多噶学派，强调人类在自然状态下固有的，神圣不可侵犯和剥夺的权利。因此，人类的权利来自天然，所以一切人为的国家、政权、社会、风尚、秩序，都必须经过人的权利。\n    而另有一些人则认为，在自然状态下，只有弱肉强食、物竞天择、胜者为王，没有人权，更没有平等。是人，在与自然的抗争中，与人类自身博弈中，从理性出发，假借更高的名义，将所谓的“权利”赋予给了自己。\n     因此，观念中的自然权利究竟该作何论，权利到底是得授于天，还是来自我们自己？让我们期待这场比赛将带给我们的启发。权利天赋即自然权利（Natural Right），最早的表述或来自古希腊斯多噶学派，强调人类在自然状态下固有的，神圣不可侵犯和剥夺的权利。因此，人类的权利来自天然，所以一切人为的国家、政权、社会、风尚、秩序，都必须经过人的权利。\n    而另有一些人则认为，在自然状态下，只有弱肉强食、物竞天择、胜者为王，没有人权，更没有平等。是人，在与自然的抗争中，与人类自身博弈中，从理性出发，假借更高的名义，将所谓的“权利”赋予给了自己。\n     因此，观念中的自然权利究竟该作何论，权利到底是得授于天，还是来自我们自己？让我们期待这场比赛将带给我们的启发。"
+                    android:textColor="@color/white"
+                    android:textSize="14dp" />
+            </LinearLayout>
+        </com.baibian.view.MyScrollView>
+    </LinearLayout>
+    <!--右侧布局-->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginStart="10dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:ellipsize="marquee"
+                android:gravity="center"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:maxLines="1"
+                android:text="“以成败论英雄是一种价值观”"
+                android:textColor="@color/word_color"
+                android:textSize="23sp" />
+
+            <ImageView
+                android:id="@+id/jump_to_nextpage_img"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:padding="5dp"
+                android:src="@mipmap/perfect_argument_jump_to_next" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginStart="10dp">
+
+            <TextView
+                android:id="@+id/argumenter"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="北冥有鱼"
+                android:textColor="@color/middle_gray"
+                android:textSize="23sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginStart="5dp"
+                android:layout_toEndOf="@id/argumenter"
+                android:gravity="center"
+                android:text="版："
+                android:textColor="@color/light_gray"
+                android:textSize="23sp" />
+
+            <LinearLayout
+                android:id="@+id/praise_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerInParent="true"
+                android:layout_marginEnd="20dp">
+
+                <TextView
+                    android:id="@+id/argument_delete_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="10dp"
+                    android:gravity="center"
+                    android:text="删除"
+                    android:textColor="#E51C23" />
+
+                <LinearLayout
+                    android:id="@+id/scan_praise_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/slight_gray_rect"
+                    android:padding="5dp">
+
+                    <ImageView
+                        android:id="@+id/argument_praise_img"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_gravity="center_vertical"
+                        android:src="@mipmap/not_praised" />
+
+                    <TextView
+                        android:id="@+id/argument_praise_num"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="5dp"
+                        android:gravity="center"
+                        android:text="1.2k"
+                        android:textSize="15sp" />
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+
+        <com.baibian.view.MyScrollView
+            android:id="@+id/change_argument"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="10dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingTop="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/change_argument_edt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:cursorVisible="false"
+                    android:enabled="false"
+                    android:text="    权利天赋即自然权利（Natural Right），最早的表述或来自古希腊斯多噶学派，强调人类在自然状态下固有的，神圣不可侵犯和剥夺的权利。因此，人类的权利来自天然，所以一切人为的国家、政权、社会、风尚、秩序，都必须经过人的权利。\n    而另有一些人则认为，在自然状态下，只有弱肉强食、物竞天择、胜者为王，没有人权，更没有平等。是人，在与自然的抗争中，与人类自身博弈中，从理性出发，假借更高的名义，将所谓的“权利”赋予给了自己。\n     因此，观念中的自然权利究竟该作何论，权利到底是得授于天，还是来自我们自己？让我们期待这场比赛将带给我们的启发。权利天赋即自然权利（Natural Right），最早的表述或来自古希腊斯多噶学派，强调人类在自然状态下固有的，神圣不可侵犯和剥夺的权利。因此，人类的权利来自天然，所以一切人为的国家、政权、社会、风尚、秩序，都必须经过人的权利。\n    而另有一些人则认为，在自然状态下，只有弱肉强食、物竞天择、胜者为王，没有人权，更没有平等。是人，在与自然的抗争中，与人类自身博弈中，从理性出发，假借更高的名义，将所谓的“权利”赋予给了自己。\n     因此，观念中的自然权利究竟该作何论，权利到底是得授于天，还是来自我们自己？让我们期待这场比赛将带给我们的启发。"
+                    android:textColor="@color/word_color"
+                    android:textSize="14sp" />
+            </LinearLayout>
+        </com.baibian.view.MyScrollView>
+    </LinearLayout>
+</LinearLayout>

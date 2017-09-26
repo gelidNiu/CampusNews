@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="#ffffff"
+    android:layout_width="300dp" android:layout_height="match_parent">
+    <TextView
+        android:padding="3dp"
+        android:id="@+id/user_setting_c_t_d_title"
+        android:textSize="16sp"
+        android:textColor="@color/colorAccent"
+        android:text="显示设置"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <RelativeLayout
+        android:padding="20dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:id="@+id/user_setting_c_t_d_text_group"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:textColor="?attr/colorValue"
+                android:textSize="16sp"
+                android:text="小字号"
+                android:padding="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:textColor="?attr/colorValue"
+                android:textSize="16sp"
+                android:text="中字号（默认）"
+                android:padding="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:textColor="?attr/colorValue"
+                android:textSize="16sp"
+                android:text="大字号"
+                android:padding="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:textColor="?attr/colorValue"
+                android:textSize="16sp"
+                android:text="超大字号"
+                android:padding="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <RadioGroup
+            android:layout_alignBottom="@id/user_setting_c_t_d_text_group"
+            android:layout_alignTop="@id/user_setting_c_t_d_text_group"
+            android:gravity="end"
+            android:id="@+id/user_setting_c_t_d_radio_group"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RadioButton
+                android:id="@+id/user_setting_c_t_d_radio_group_btn_small"
+                android:layout_width="wrap_content"
+                android:layout_weight="1"
+                android:layout_height="0dp" />
+            <RadioButton
+                android:id="@+id/user_setting_c_t_d_radio_group_btn_middle"
+                android:layout_width="wrap_content"
+                android:layout_weight="1"
+                android:layout_height="0dp" />
+            <RadioButton
+                android:id="@+id/user_setting_c_t_d_radio_group_btn_large"
+                android:layout_width="wrap_content"
+                android:layout_weight="1"
+                android:layout_height="0dp" />
+            <RadioButton
+                android:id="@+id/user_setting_c_t_d_radio_group_btn_super_large"
+                android:layout_width="wrap_content"
+                android:layout_weight="1"
+                android:layout_height="0dp" />
+        </RadioGroup>
+    </RelativeLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textSize="16sp"
+            android:text="取消"
+            android:padding="10dp"
+            android:id="@+id/user_setting_c_t_d_cancel_btn"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:textSize="16sp"
+            android:text="确认"
+            android:padding="10dp"
+            android:gravity="center"
+            android:textColor="@color/colorAccent"
+            android:id="@+id/user_setting_c_t_d_ensure_btn"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</LinearLayout>

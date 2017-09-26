@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.baibian.activity.user_drawer.user_setting.UserSettingActivity">
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/app_bar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize">
+        <android.support.v7.widget.Toolbar
+            android:background="?attr/toolBarColorValue"
+            android:id="@+id/tool_bar"
+            app:title="设置"
+            app:navigationIcon="@mipmap/gray_back_mipmap"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </android.support.v7.widget.Toolbar>
+    </android.support.design.widget.AppBarLayout>
+
+    <ScrollView
+        android:layout_below="@id/app_bar"
+        android:paddingTop="5dp"
+        android:scrollbars="vertical"
+        android:id="@+id/setting_scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:background="?attr/backGroundColorValue"
+            android:orientation="vertical"
+            android:id="@+id/setting_content_layout"
+            android:paddingBottom="15dp"
+            android:paddingTop="15dp"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent">
+
+            <LinearLayout
+                android:paddingStart="20dp"
+                android:paddingEnd="20dp"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.baibian.view.reusable_view.EmphasisRelativeLayout
+                    android:id="@+id/setting_save_stream"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/setting_save_stream_mode"
+                        android:text="省流量模式"
+                        android:textSize="16sp"
+                        android:textColor="?attr/colorValue"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:text="仅在wifi环境下加载图片"
+                        android:textSize="13sp"
+                        android:layout_marginTop="5dp"
+                        android:paddingBottom="10dp"
+                        android:textColor="?attr/colorValue"
+                        android:layout_below="@id/setting_save_stream_mode"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <vn.luongvo.widget.iosswitchview.SwitchView
+                        android:id="@+id/setting_save_stream_switch"
+                        android:layout_alignParentEnd="true"
+                        android:layout_width="40dp"
+                        android:layout_centerVertical="true"
+                        android:layout_height="wrap_content" />
+                    <!--
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="1dp"
+                                    android:background="@color/colorPrimary"
+                                    android:layout_alignParentBottom="true"/>
+                    -->
+                </com.baibian.view.reusable_view.EmphasisRelativeLayout>
+
+                <com.baibian.view.reusable_view.EmphasisRelativeLayout
+                    android:id="@+id/setting_modify_text_size"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:paddingTop="10dp"
+                        android:paddingBottom="10dp"
+                        android:textSize="16sp"
+                        android:text="字体大小"
+                        android:textColor="?attr/colorValue"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </com.baibian.view.reusable_view.EmphasisRelativeLayout>
+
+                <com.baibian.view.reusable_view.EmphasisRelativeLayout
+                    android:id="@+id/setting_user_honor_show"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:paddingTop="10dp"
+                        android:paddingBottom="10dp"
+                        android:text="用户荣誉显示"
+                        android:textSize="16sp"
+                        android:textColor="?attr/colorValue"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <vn.luongvo.widget.iosswitchview.SwitchView
+                        android:id="@+id/setting_user_honor_show_switch"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_width="40dp"
+                        android:layout_height="wrap_content" />
+                </com.baibian.view.reusable_view.EmphasisRelativeLayout>
+                <com.baibian.view.reusable_view.EmphasisRelativeLayout
+                    android:id="@+id/setting_user_achievement_show"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:paddingTop="10dp"
+                        android:paddingBottom="10dp"
+                        android:text="用户成就显示"
+                        android:textSize="16sp"
+                        android:textColor="?attr/colorValue"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <vn.luongvo.widget.iosswitchview.SwitchView
+                        android:id="@+id/setting_user_achievement_show_switch"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_width="40dp"
+                        android:layout_height="wrap_content" />
+                </com.baibian.view.reusable_view.EmphasisRelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/setting_clean_cache"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:paddingTop="10dp"
+                        android:paddingBottom="5dp"
+                        android:text="清理缓存"
+                        android:textSize="16sp"
+                        android:textColor="?attr/colorValue"
+                        android:id="@+id/setting_clean_cache_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:id="@+id/setting_clean_cache_current_cache_before"
+                        android:layout_below="@id/setting_clean_cache_text"
+                        android:text="当前缓存"
+                        android:textSize="13sp"
+                        android:textColor="?attr/colorValue"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:id="@+id/setting_clean_cache_current_cache_number"
+                        android:layout_alignBottom="@id/setting_clean_cache_current_cache_before"
+                        android:layout_toEndOf="@id/setting_clean_cache_current_cache_before"
+                        android:text="13.25"
+                        android:textSize="13sp"
+                        android:textColor="?attr/colorValue"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:id="@+id/setting_clean_cache_current_cache_after"
+                        android:layout_alignBottom="@id/setting_clean_cache_current_cache_before"
+                        android:text="KB"
+                        android:layout_toEndOf="@id/setting_clean_cache_current_cache_number"
+                        android:textSize="13sp"
+                        android:textColor="?attr/colorValue"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </RelativeLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_marginTop="20dp"
+                android:orientation="vertical"
+                android:paddingTop="5dp"
+                android:paddingBottom="15dp"
+                android:paddingStart="20dp"
+                android:paddingEnd="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <com.baibian.view.reusable_view.EmphasisRelativeLayout
+                    android:id="@+id/setting_notification_set"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:gravity="center_vertical"
+                        android:layout_centerVertical="true"
+                        android:paddingBottom="10dp"
+                        android:paddingTop="10dp"
+                        android:id="@+id/setting_notification_set_text"
+                        android:text="通知设置"
+                        android:textColor="?attr/colorValue"
+                        android:textSize="16sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </com.baibian.view.reusable_view.EmphasisRelativeLayout>
+                <com.baibian.view.reusable_view.EmphasisRelativeLayout
+                    android:id="@+id/setting_send_set"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:paddingBottom="10dp"
+                        android:paddingTop="10dp"
+                        android:id="@+id/setting_send_set_text"
+                        android:text="推送设置"
+                        android:textColor="?attr/colorValue"
+                        android:textSize="16sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </com.baibian.view.reusable_view.EmphasisRelativeLayout>
+                <RelativeLayout
+                    android:id="@+id/setting_message_set"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/setting_message_set_text"
+                        android:paddingTop="10dp"
+                        android:text="消息设置"
+                        android:textSize="16sp"
+                        android:textColor="?attr/colorValue"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </RelativeLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_marginTop="20dp"
+                android:orientation="vertical"
+                android:paddingTop="5dp"
+                android:paddingBottom="15dp"
+                android:paddingStart="20dp"
+                android:paddingEnd="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <com.baibian.view.reusable_view.EmphasisRelativeLayout
+                    android:id="@+id/setting_account_set"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/setting_account_set_text"
+                        android:text="账号设置"
+                        android:textColor="?attr/colorValue"
+                        android:textSize="16sp"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </com.baibian.view.reusable_view.EmphasisRelativeLayout>
+                <RelativeLayout
+                    android:id="@+id/setting_account_set_safety"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/setting_account_set_safety_text"
+                        android:text="账号安全"
+                        android:textColor="?attr/colorValue"
+                        android:textSize="16sp"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:layout_below="@id/setting_account_set_safety_text"
+                        android:id="@+id/setting_account_set_safety_text_detail"
+                        android:text="绑定手机及邮箱，修改密码"
+                        android:textSize="13sp"
+                        android:textColor="?attr/colorValue"
+                        android:paddingBottom="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </RelativeLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_marginTop="20dp"
+                android:orientation="vertical"
+                android:paddingTop="5dp"
+                android:paddingBottom="15dp"
+                android:paddingStart="20dp"
+                android:paddingEnd="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <com.baibian.view.reusable_view.EmphasisRelativeLayout
+                    android:id="@+id/setting_relation"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/setting_relation_text"
+                        android:text="关于论道"
+                        android:textSize="16sp"
+                        android:textColor="?attr/colorValue"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </com.baibian.view.reusable_view.EmphasisRelativeLayout>
+                <com.baibian.view.reusable_view.EmphasisRelativeLayout
+                    android:id="@+id/setting_response_and_help"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/setting_response_and_help_text"
+                        android:text="反馈与帮助"
+                        android:textSize="16sp"
+                        android:textColor="?attr/colorValue"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </com.baibian.view.reusable_view.EmphasisRelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

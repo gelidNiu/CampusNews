@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp">
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="10dp"
+        android:src="@drawable/default_round_head"
+        android:id="@+id/user_portrait"/>
+    <TextView
+        android:id="@+id/user_name"
+        android:textColor="@color/colorAccent"
+        android:text="轮到军"
+        android:textSize="16sp"
+        android:layout_toEndOf="@id/user_portrait"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/user_signature"
+        android:text="您好，您已经被封号"
+        android:textSize="13sp"
+        android:textColor="?attr/colorValue"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="5dp"
+        android:layout_alignStart="@id/user_name"
+        android:layout_below="@id/user_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/user_date"
+        android:textSize="13sp"
+        android:text="2017-6-25"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</RelativeLayout>

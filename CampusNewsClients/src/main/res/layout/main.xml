@@ -1,0 +1,325 @@
+<android.support.v4.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true">
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/activity_bg_color"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <include layout="@layout/main_head" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:id="@+id/content"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="60dp"></FrameLayout>
+
+
+            <!--底部布局部分-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:background="#FFF"
+                android:elevation="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp">
+                    <!--第一个碎片按钮部分-->
+                    <RelativeLayout
+                        android:id="@+id/fragment1_layout"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <ImageView
+                            android:id="@+id/fragment1_img"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_centerHorizontal="true"
+                            android:src="@mipmap/black_mipmap" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/fragment1_img"
+                            android:layout_centerHorizontal="true"
+                            android:text="论讯"
+                            android:textColor="#000000" />
+
+
+                    </RelativeLayout>
+                    <!--第二个碎片按钮部分-->
+                    <RelativeLayout
+                        android:id="@+id/fragment2_layout"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <ImageView
+                            android:id="@+id/fragment2_img"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_centerHorizontal="true"
+                            android:src="@mipmap/black_mipmap" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/fragment2_img"
+                            android:layout_centerHorizontal="true"
+                            android:text="论吧"
+                            android:textColor="#000000" />
+                    </RelativeLayout>
+                    <!--中间部分-->
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:visibility="gone">
+
+                    </LinearLayout>
+                    <!--第三个碎片按钮部分-->
+
+                    <RelativeLayout
+                        android:id="@+id/fragment3_layout"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <ImageView
+                            android:id="@+id/fragment3_img"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_centerHorizontal="true"
+                            android:src="@mipmap/black_mipmap" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/fragment3_img"
+                            android:layout_centerHorizontal="true"
+                            android:text="论吧"
+                            android:textColor="#000000" />
+                    </RelativeLayout>
+
+                    <!--第四个碎片按钮部分-->
+
+                    <RelativeLayout
+                        android:id="@+id/fragment4_layout"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:visibility="gone">
+
+                        <ImageView
+                            android:id="@+id/fragment4_img"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:layout_centerHorizontal="true"
+                            android:src="@drawable/periodicalsfragment" />
+                    </RelativeLayout>
+
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>
+    <RelativeLayout
+
+        android:layout_gravity="start"
+        android:id="@+id/nav_father_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:background="#ffffff"
+            android:id="@+id/background_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:contentDescription="用作显示背景，后期会更换到其他地方去" />
+        <RelativeLayout
+            android:padding="5dp"
+            android:id="@+id/bottom_bar"
+            android:translationZ="20dp"
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <View
+                android:id="@+id/top_divider"
+                android:background="#a197a1"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>
+
+            <com.ruffian.library.RTextView
+
+                android:paddingTop="10dp"
+                android:id="@+id/user_setting"
+                android:text="设置"
+                app:icon_height="30dp"
+                app:icon_width="30dp"
+
+                app:icon_src_normal="@drawable/ic_drawer_setting"
+                android:layout_marginStart="50dp"
+                android:gravity="center_vertical"
+                android:layout_centerVertical="true"
+                android:textColor="@color/text_color_pure_black_user_information"
+                android:textSize="@dimen/text_size_middle_16_sp"
+                android:drawableStart="@drawable/ic_drawer_setting"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <com.ruffian.library.RTextView
+                android:id="@+id/night_mode"
+                android:text="夜间模式"
+                android:paddingTop="10dp"
+                android:layout_alignTop="@id/user_setting"
+                android:layout_alignBottom="@id/user_setting"
+                app:icon_src_normal="@drawable/ic_personal_night_mode"
+                app:icon_width="25dp"
+                app:icon_height="25dp"
+
+                android:drawablePadding="1dp"
+                android:textSize="16sp"
+                android:layout_alignParentEnd="true"
+                android:gravity="center_vertical"
+                android:textColor="@color/text_color_pure_black_user_information"
+                android:layout_marginEnd="50dp"
+                android:drawableStart="@drawable/ic_drawer_setting"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout><!--
+        <android.support.design.widget.NavigationView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/nav_view"
+            app:menu="@menu/nav_menu"
+            app:headerLayout="@layout/nav_header" />-->
+        <include
+            android:id="@+id/nav_header"
+            layout="@layout/nav_header"/>
+        <LinearLayout
+            android:layout_below="@id/nav_header"
+            android:orientation="vertical"
+            android:id="@+id/nav_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <com.ruffian.library.RTextView
+                android:padding="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:drawablePadding="20dp"
+                android:text="我的关注"
+                android:gravity="center_vertical"
+                android:textSize="16sp"
+                android:textColor="?attr/colorValue"
+                android:id="@+id/my_focus"
+                app:icon_src_normal="@drawable/ic_personal_focus_amount"
+                app:icon_width="30dp"
+                app:icon_height="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/ic_personal_focus_amount"/>
+            <com.ruffian.library.RTextView
+                android:padding="10dp"
+                android:layout_marginStart="10dp"
+                android:drawablePadding="20dp"
+                app:icon_src_normal="@drawable/ic_drawer_favorite"
+                app:icon_height="30dp"
+                app:icon_width="30dp"
+                android:text="我的收藏"
+                android:gravity="center_vertical"
+                android:textSize="16sp"
+                android:textColor="?attr/colorValue"
+                android:id="@+id/my_collection"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/ic_drawer_favorite"/>
+            <com.ruffian.library.RTextView
+                android:padding="10dp"
+                android:layout_marginStart="10dp"
+
+                android:drawablePadding="20dp"
+                android:text="我的书架"
+                app:icon_src_normal="@drawable/ic_personal_periodical"
+                app:icon_width="30dp"
+                app:icon_height="30dp"
+                android:textSize="16sp"
+                android:gravity="center_vertical"
+                android:textColor="?attr/colorValue"
+                android:id="@+id/my_bookshelf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/ic_drawer_favorite"/>
+            <com.ruffian.library.RTextView
+                android:padding="10dp"
+                android:drawablePadding="20dp"
+                android:text="消息与通知"
+                android:layout_marginStart="10dp"
+
+                app:icon_src_normal="@drawable/ic_personal_messy"
+                app:icon_height="23dp"
+                app:icon_width="30dp"
+                android:gravity="center_vertical"
+                android:textSize="16sp"
+                android:textColor="?attr/colorValue"
+                android:id="@+id/message_and_notification"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/ic_drawer_favorite"/>
+            <com.ruffian.library.RTextView
+                android:padding="10dp"
+                android:drawablePadding="20dp"
+                android:text="回收站"
+                app:icon_src_normal="@drawable/ic_personal_recycle"
+                app:icon_width="30dp"
+                app:icon_height="30dp"
+                android:textSize="16sp"
+                android:textColor="?attr/colorValue"
+                android:id="@+id/recycle_station"
+                android:gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+
+                android:drawableStart="@drawable/ic_drawer_favorite"/>
+            <TextView
+                android:padding="10dp"
+                android:drawablePadding="20dp"
+                android:text="历史浏览"
+                android:textSize="16sp"
+                android:textColor="?attr/colorValue"
+                android:id="@+id/history_see"
+                android:gravity="center_vertical"
+                android:layout_marginStart="10dp"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/ic_drawer_favorite"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+</android.support.v4.widget.DrawerLayout>

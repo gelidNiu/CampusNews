@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+     xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/sift"
+        android:title="@string/order"
+        android:icon="@drawable/order"
+        app:showAsAction="ifRoom">
+    </item>
+
+    <item
+        android:id="@+id/collect"
+        android:title="@string/collect"
+        android:icon="@drawable/collect"
+        app:showAsAction="never">
+    </item>
+
+    <item
+        android:id="@+id/share"
+        android:title="@string/share"
+        android:icon="@drawable/share"
+        app:showAsAction="never">
+    </item>
+
+    <item
+        android:id="@+id/history"
+        android:title="@string/history"
+        android:icon="@drawable/history"
+        app:showAsAction="never">
+    </item>
+
+    <item
+        android:id="@+id/report"
+        android:title="@string/report"
+        android:icon="@drawable/report"
+        app:showAsAction="never">
+    </item>
+
+
+</menu>

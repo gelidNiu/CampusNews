@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="100dp">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/rank_icon"
+            android:src="@drawable/cheese_1"
+            android:layout_gravity="center"
+            android:scaleType="centerCrop"
+            android:layout_width="70dp"
+            android:layout_height="70dp" />
+
+        <ImageView
+            android:id="@+id/header"
+            android:scaleType="centerCrop"
+            android:layout_gravity="center"
+            android:src="@drawable/default_round_head"
+            android:layout_width="70dp"
+            android:layout_height="70dp" />
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView android:id="@+id/name"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textSize="16sp"
+                android:text="初音酱" />
+
+            <TextView
+                android:text="国际；经济"
+                android:textSize="16sp"
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:id="@+id/time" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            >
+
+            <LinearLayout
+                android:layout_marginTop="20dp"
+                android:layout_width="wrap_content"
+                android:layout_weight="1"
+                android:layout_height="0dp"
+                >
+                <ImageView
+                    android:src="@mipmap/blue_add"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    />
+                <ImageView
+                    android:src="@mipmap/blue_add"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    />
+                <ImageView
+                    android:src="@mipmap/blue_add"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    />
+                <ImageView
+                    android:src="@mipmap/blue_add"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    />
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:layout_marginTop="10dp"
+                >
+
+                <ImageView
+                    android:src="@drawable/like"
+                    android:layout_width="27dp"
+                    android:layout_height="25dp"
+                    android:id="@+id/likes_img"
+                    android:layout_weight="1" />
+
+                <TextView
+                    android:text="10086"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:id="@+id/likes_num"
+                    android:layout_weight="1"
+                    />
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

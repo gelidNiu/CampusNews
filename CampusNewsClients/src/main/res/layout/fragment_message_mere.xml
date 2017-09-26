@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:id="@+id/message_solid_root"
+    android:orientation="vertical">
+    <TextView
+        android:id="@+id/message_solid_title"
+        android:textStyle="bold"
+        android:textSize="21sp"
+        android:textColor="#FFFFFF"
+        android:background="@color/colorPrimary"
+        android:text="成败英雄论是否成立"
+        android:paddingStart="20dp"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <LinearLayout
+        android:id="@+id/message_solid_content"
+        android:padding="15dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </LinearLayout>
+    <TextView
+        android:id="@+id/message_solid_collapse_btn"
+        android:layout_gravity="center"
+        android:textSize="13sp"
+        android:text="@string/message_solid_collapse"
+        android:textColor="?attr/colorValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</LinearLayout>

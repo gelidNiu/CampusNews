@@ -1,0 +1,337 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root_view"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#FFF" >
+
+      <LinearLayout
+          android:elevation="10dp"
+            android:id="@+id/choise_direction_all_layout"
+            android:background="@color/transparent"
+            android:layout_width="match_parent"
+              android:layout_height="@dimen/title_bar_height">
+            <Button
+                android:layout_gravity="center_vertical"
+              android:id="@+id/choise_direction_back"
+              android:layout_width="44dp"
+              android:layout_height="44dp"
+              android:background="@mipmap/yellow_back_img"/>
+              <TextView
+                  android:layout_gravity="center_vertical"
+                  android:layout_toRightOf="@id/choise_direction_back"
+                  android:textSize="32sp"
+                  android:textColor="#FFC72A"
+                  android:text="设置"
+                  android:layout_width="wrap_content"
+                  android:layout_height="44dp" />
+        </LinearLayout>
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_below="@id/title_bar" >
+
+            <LinearLayout
+                android:paddingTop="10dp"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <!--基本设置-->
+                <TextView
+                    style="@style/setting_top_text_style"
+                    android:text="基本设置"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:paddingTop="8dp"
+                        android:paddingLeft="5dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp">
+                        <TextView
+                            style="@style/bb_information_text"
+                            android:text="省流量模式"/>
+                        <TextView
+                            android:text="仅在WI-FI环境下才能加载图片"
+                            style="@style/setting_comment"
+                            android:paddingBottom="3dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+                    <com.baibian.view.SwitchButton
+                        android:layout_marginTop="5dp"
+                        android:layout_alignParentRight="true"
+                        style="@style/Switch"
+                        android:scrollbarStyle="insideInset"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:clickable="true" />
+                </RelativeLayout>
+
+                <ImageView  style="@style/bb_information_image_bottom"/>
+
+                <RelativeLayout
+
+                    android:paddingLeft="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="43dp">
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent">
+                        <TextView
+                            android:layout_gravity="center_vertical"
+                            style="@style/bb_information_text"
+                            android:text="字体大小"/>
+                    </LinearLayout>
+
+                    <com.baibian.view.SwitchButton
+                        android:layout_marginTop="5dp"
+                        android:layout_alignParentRight="true"
+                        style="@style/Switch"
+                        android:scrollbarStyle="insideInset"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:clickable="true" />
+                </RelativeLayout>
+                <ImageView style="@style/bb_information_image_bottom"/>
+                <RelativeLayout
+
+                    android:paddingLeft="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="43dp">
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent">
+                        <TextView
+                            android:layout_gravity="center_vertical"
+                            style="@style/bb_information_text"
+                            android:text="用户荣誉徽章显示"/>
+                    </LinearLayout>
+
+                    <com.baibian.view.SwitchButton
+                        android:layout_marginTop="5dp"
+                        android:layout_alignParentRight="true"
+                        style="@style/Switch"
+                        android:scrollbarStyle="insideInset"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:clickable="true" />
+                </RelativeLayout>
+                <ImageView style="@style/bb_information_image_bottom"/>
+                <RelativeLayout
+
+                    android:paddingLeft="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="43dp">
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent">
+                        <TextView
+                            android:layout_gravity="center_vertical"
+                            style="@style/bb_information_text"
+                            android:text="用户成就显示"/>
+                    </LinearLayout>
+
+                    <com.baibian.view.SwitchButton
+                        android:layout_marginTop="5dp"
+                        android:layout_alignParentRight="true"
+                        style="@style/Switch"
+                        android:scrollbarStyle="insideInset"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:clickable="true" />
+                </RelativeLayout>
+                <ImageView style="@style/bb_information_image_bottom"/>
+                <RelativeLayout
+                    android:paddingTop="8dp"
+                    android:paddingLeft="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp">
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp">
+                        <TextView
+                            style="@style/bb_information_text"
+                            android:text="清理缓存"/>
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:text="包括图片，音频缓存"
+                                style="@style/setting_comment"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+                            <TextView
+                                android:text="(共555MB)"
+                                style="@style/setting_comment"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+                        </LinearLayout>
+                    </LinearLayout>
+                    <com.baibian.view.SwitchButton
+                        style="@style/Switch"
+                        android:layout_alignParentRight="true"
+                        android:scrollbarStyle="insideInset"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:clickable="true" />
+
+
+                </RelativeLayout>
+                <ImageView style="@style/bb_information_image_bottom"/>
+                <TextView
+                    style="@style/setting_top_text_style"
+                    android:text="通知设置"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <LinearLayout
+                    android:id="@+id/push_layout"
+                    android:paddingTop="8dp"
+                    android:paddingLeft="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="43dp">
+                    <TextView
+                        android:layout_gravity="center_vertical"
+                        style="@style/bb_information_text"
+                        android:text="推送设置"/>
+                </LinearLayout>
+                <ImageView style="@style/bb_information_image_bottom"/>
+                <LinearLayout
+                    android:id="@+id/message_setting"
+                    android:paddingLeft="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="43dp">
+                    <TextView
+                        android:layout_gravity="center_vertical"
+                        style="@style/bb_information_text"
+                        android:text="消息设置"/>
+
+                </LinearLayout>
+                <ImageView style="@style/bb_information_image_bottom"/>
+                <TextView
+                    style="@style/setting_top_text_style"
+                    android:text="账号设置"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <RelativeLayout
+                    android:orientation="vertical"
+                    android:paddingLeft="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="43dp">
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="43dp">
+                        <TextView
+                            style="@style/bb_information_text"
+                            android:text="账号安全"/>
+                        <TextView
+                            android:text="绑定手机及邮箱，修改密码"
+                            style="@style/setting_comment"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                    </LinearLayout>
+                    <com.baibian.view.SwitchButton
+                        style="@style/Switch"
+                        android:layout_alignParentRight="true"
+                        android:scrollbarStyle="insideInset"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:clickable="true" />
+
+                </RelativeLayout>
+                <ImageView style="@style/bb_information_image_bottom"/>
+                <LinearLayout
+                    android:paddingTop="8dp"
+                    android:paddingLeft="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="43dp">
+                    <TextView
+                        android:layout_gravity="center_vertical"
+                        style="@style/bb_information_text"
+                        android:text="黑名单"/>
+                </LinearLayout>
+                <ImageView style="@style/bb_information_image_bottom"/>
+                <TextView
+                    style="@style/setting_top_text_style"
+                    android:text="关于"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <RelativeLayout
+                    android:paddingTop="8dp"
+                    android:paddingLeft="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="43dp">
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="20dp">
+                        <TextView
+                            style="@style/bb_information_text"
+                            android:text="版本更新"/>
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:text="当前版本"
+                                style="@style/setting_comment"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+                            <TextView
+                                android:text="1.0"
+                                style="@style/setting_comment"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+                    <com.baibian.view.SwitchButton
+                        style="@style/Switch"
+                        android:layout_alignParentRight="true"
+                        android:scrollbarStyle="insideInset"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:clickable="true" />
+
+                    <ImageView style="@style/bb_information_image_bottom"/>
+
+                </RelativeLayout>
+                <LinearLayout
+                    android:paddingTop="8dp"
+                    android:paddingLeft="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="43dp">
+                    <TextView
+                        android:layout_gravity="center_vertical"
+                        style="@style/bb_information_text"
+                        android:text="关于论道"/>
+                </LinearLayout>
+                <ImageView style="@style/bb_information_image_bottom"/>
+                <TextView
+                    android:layout_marginBottom="50dp"
+                    android:layout_gravity="center_horizontal"
+                    android:textSize="22sp"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="50dp"
+                    android:paddingRight="50dp"
+                    android:textColor="@color/red"
+                    android:text="退出账号"
+                    android:layout_marginTop="30dp"
+                    android:background="@drawable/gray_rect"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+        </ScrollView>
+
+
+</LinearLayout>

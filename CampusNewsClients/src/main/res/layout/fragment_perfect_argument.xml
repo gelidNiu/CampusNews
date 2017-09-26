@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginStart="10dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:ellipsize="marquee"
+                android:gravity="center"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:maxLines="1"
+                android:text="“以成败论英雄是一种价值观”"
+                android:textColor="@color/word_color"
+                android:textSize="23sp" />
+
+            <TextView
+                android:id="@+id/publish_tv"
+                android:layout_width="60dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/blue_rect"
+                android:gravity="center|center_vertical"
+                android:padding="5dp"
+                android:text="发表"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginStart="10dp">
+
+            <TextView
+                android:id="@+id/argumenter"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="我的"
+                android:textColor="@color/middle_gray"
+                android:textSize="23sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginStart="5dp"
+                android:layout_toEndOf="@id/argumenter"
+                android:gravity="center"
+                android:text="版："
+                android:textColor="@color/light_gray"
+                android:textSize="23sp" />
+        </RelativeLayout>
+
+        <com.baibian.view.MyScrollView
+            android:id="@+id/change_argument"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="10dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingTop="5dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/myArgument_edt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:cursorVisible="false"
+                    android:text="    权利天赋即自然权利（Natural Right），最早的表述或来自古希腊斯多噶学派，强调人类在自然状态下固有的，神圣不可侵犯和剥夺的权利。因此，人类的权利来自天然，所以一切人为的国家、政权、社会、风尚、秩序，都必须经过人的权利。\n    而另有一些人则认为，在自然状态下，只有弱肉强食、物竞天择、胜者为王，没有人权，更没有平等。是人，在与自然的抗争中，与人类自身博弈中，从理性出发，假借更高的名义，将所谓的“权利”赋予给了自己。\n     因此，观念中的自然权利究竟该作何论，权利到底是得授于天，还是来自我们自己？让我们期待这场比赛将带给我们的启发。权利天赋即自然权利（Natural Right），最早的表述或来自古希腊斯多噶学派，强调人类在自然状态下固有的，神圣不可侵犯和剥夺的权利。因此，人类的权利来自天然，所以一切人为的国家、政权、社会、风尚、秩序，都必须经过人的权利。\n    而另有一些人则认为，在自然状态下，只有弱肉强食、物竞天择、胜者为王，没有人权，更没有平等。是人，在与自然的抗争中，与人类自身博弈中，从理性出发，假借更高的名义，将所谓的“权利”赋予给了自己。\n     因此，观念中的自然权利究竟该作何论，权利到底是得授于天，还是来自我们自己？让我们期待这场比赛将带给我们的启发。"
+                    android:textColor="@color/word_color"
+                    android:textSize="14dp" />
+            </LinearLayout>
+        </com.baibian.view.MyScrollView>
+    </LinearLayout>
+    <EditText
+        android:id="@+id/original_argument_edt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/word_color"
+        android:background="@null"
+        android:visibility="invisible" />
+</LinearLayout>

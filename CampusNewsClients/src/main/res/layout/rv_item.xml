@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/CardGround"
+        android:layout_margin="15dp"
+        android:layout_below="@id/pager">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp">
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:id="@+id/head_image"
+                android:layout_margin="5dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:id="@+id/user_name"
+                android:textColor="@color/Selected"
+                android:text="李狗蛋"
+                android:layout_toRightOf="@id/head_image"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_isSolved"
+                android:layout_marginTop="3dp"
+                android:text="已解决"
+                android:textColor="@color/cardview_light_background"
+                android:background="@color/Blue"
+                android:layout_toRightOf="@id/head_image"
+                android:layout_below="@id/user_name"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/comment_date"
+                android:text="2017-08-24"
+                android:layout_margin="3dp"
+                android:layout_below="@id/user_name"
+                android:layout_toRightOf="@id/tv_isSolved"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/comment_title"
+                android:layout_marginTop="3dp"
+                android:text="@string/title"
+                android:layout_toRightOf="@id/head_image"
+                android:layout_below="@id/tv_isSolved"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/comment_item"
+                android:layout_marginTop="3dp"
+                android:text="@string/example"
+                android:layout_toRightOf="@id/head_image"
+                android:layout_below="@id/comment_title"/>
+
+
+
+
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

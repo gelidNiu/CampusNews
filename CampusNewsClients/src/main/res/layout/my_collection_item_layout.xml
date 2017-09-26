@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingEnd="20dp">
+    <TextView
+        android:id="@+id/my_collection_title"
+        android:textSize="18sp"
+        android:text="成败英雄论是否成立"
+        android:textColor="?attr/colorValue"
+        android:textStyle="bold"
+        android:drawableStart="@drawable/ic_action_favor"
+        android:gravity="center_vertical"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="10dp"
+        android:drawablePadding="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <ImageView
+        android:id="@+id/my_collection_close_btn"
+        android:layout_alignBottom="@id/my_collection_title"
+        android:layout_alignParentEnd="true"
+        android:src="@drawable/ic_personal_delete"
+        android:layout_width="30dp"
+        android:layout_height="30dp" />
+
+    <com.baibian.view.reusable_view.MyExpandableTextView
+        android:background="#3216"
+        android:id="@+id/my_collection_comment_text"
+        android:layout_below="@id/my_collection_title"
+        android:layout_alignStart="@id/my_collection_title"
+        android:layout_alignEnd="@id/my_collection_close_btn"
+        android:padding="5dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </com.baibian.view.reusable_view.MyExpandableTextView>
+    <TextView
+        android:id="@+id/my_collection_slip"
+        android:text="跳转"
+        android:textColor="?attr/colorValue"
+        android:textSize="18sp"
+        android:drawableStart="@drawable/ic_action_previous"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@id/my_collection_comment_text"
+        android:padding="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</RelativeLayout>

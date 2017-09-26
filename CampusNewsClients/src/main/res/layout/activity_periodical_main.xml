@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/choise_direction_all_layout"
+            android:background="#ffff"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/back"
+                android:layout_width="44dp"
+                android:layout_height="fill_parent"
+                android:background="@mipmap/gray_back_mipmap"
+                />
+
+            <TextView
+                android:text="期刊"
+                android:textColor="#000"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:textSize="20dp"
+                android:id="@+id/title"
+                android:layout_weight="1" />
+            <ImageView
+                android:layout_width="44dp"
+                android:layout_height="fill_parent"
+                android:src="@mipmap/search"
+                android:id="@+id/search" />
+        </LinearLayout>
+    </android.support.design.widget.AppBarLayout>
+    <FrameLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_weight="3"
+        android:layout_height="match_parent"/>
+</LinearLayout>

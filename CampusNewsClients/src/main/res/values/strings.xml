@@ -1,5 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string name="vercode_empty">验证码为空！</string>
+    <string name="visitor_look">随便看看></string>
+    <string name="register">注   册</string>
+    <string name="password">密码 </string>
+    <string name="get_vertification">获取验证码</string>
+    <string name="write_vertification">输入验证码</string>
+    <string name="phone_email">手机号/邮箱</string>
+    <string name="register_word1">hey,  还没有账号?</string>
+    <string name="register_word2">快来注册吧~</string>
     <string name="title">以成败论英雄是一种价值观</string>
     <string name="share">分享</string>
     <string name="order">筛选</string>

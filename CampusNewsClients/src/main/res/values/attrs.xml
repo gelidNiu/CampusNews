@@ -31,6 +31,16 @@
 
     </declare-styleable>
 
+    <attr name="borderRadius" format="dimension" />
+    <attr name="imageType">
+        <enum name="circle" value="0" />
+        <enum name="round" value="1" />
+    </attr>
+
+    <declare-styleable name="roundImage">
+        <attr name="borderRadius" />
+        <attr name="imageType" />
+    </declare-styleable>
 
     <!--这里是用来切换夜间模式用的-->
     <attr name="toolBarColorValue" format="color"/>

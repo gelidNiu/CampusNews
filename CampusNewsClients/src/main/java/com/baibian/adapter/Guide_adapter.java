@@ -16,7 +16,7 @@ import com.baibian.activity.login.registerActivity;
 import java.util.List;
 
 /**
- * Òıµ¼½çÃæµÄViewpagerµÄadapter
+ * ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Viewpagerï¿½ï¿½adapter
  */
 public class Guide_adapter extends PagerAdapter {
     public List<View> Viewlist;
@@ -31,7 +31,7 @@ public class Guide_adapter extends PagerAdapter {
     }
 
     /**
-     * ·µ»ØÒ³¿¨ÊıÄ¿
+     * ï¿½ï¿½ï¿½ï¿½Ò³ï¿½ï¿½ï¿½ï¿½Ä¿
      */
     public int getCount() {
         return Viewlist.size();
@@ -39,14 +39,14 @@ public class Guide_adapter extends PagerAdapter {
 
 
     /**
-     * ViewÊÇ·ñÀ´×Ô¶ÔÏó
+     * Viewï¿½Ç·ï¿½ï¿½ï¿½ï¿½Ô¶ï¿½ï¿½ï¿½
      */
     public boolean isViewFromObject(View arg0, Object arg1) {
         return arg0 == arg1;
     }
 
     /**
-     * ÊµÀı»¯Ò»¸öÒ³¿¨
+     * Êµï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½Ò³ï¿½ï¿½
      */
     // public Object instantiateItem(ViewGroup container,int position){
     //    container.addView(Viewlist.get(position));
@@ -54,7 +54,7 @@ public class Guide_adapter extends PagerAdapter {
     //  }
 
     /**
-     * Ïú»ÙÒ»¸öÒ³¿¨
+     * ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½Ò³ï¿½ï¿½
      */
     public void destroyItem(ViewGroup container, int position, Object object) {
         container.removeView(Viewlist.get(position));
@@ -67,14 +67,14 @@ public class Guide_adapter extends PagerAdapter {
 
         ((ViewPager) arg0).addView(Viewlist.get(arg1), 0);
         /**
-         * µ±½øÈë×îºóÒ»¸ö½çÃæÊ±£¬ÊµÀı»¯Èı¸ö°´Å¥£¬
+         * ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê±ï¿½ï¿½Êµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Å¥ï¿½ï¿½
          */
         if (arg1 == Viewlist.size() - 1) {
             guide_login_btn = (Button) arg0.findViewById(R.id.guide_login_btn);
             guide_register_btn = (Button) arg0.findViewById(R.id.guide_register_btn);
             guide_visitor_btn = (Button) arg0.findViewById(R.id.guide_visitor_btn);
             /**
-             * µÇÂ¼°´Å¥£¬½øÈëµÇÂ¼½çÃæ
+             * ç™»å½•æŒ‰é’®ç›‘å¬
              */
             guide_login_btn.setOnClickListener(new View.OnClickListener() {
                 @Override
@@ -85,7 +85,7 @@ public class Guide_adapter extends PagerAdapter {
                 }
             });
             /**
-             * ×¢²á°´Å¥£¬½øÈë×¢²á½çÃæ
+             * æ³¨å†ŒæŒ‰é’®ç›‘å¬
              */
             guide_register_btn.setOnClickListener(new View.OnClickListener() {
                 @Override
@@ -96,7 +96,7 @@ public class Guide_adapter extends PagerAdapter {
                 }
             });
             /**
-             * ÓÎ¿ÍÄ£Ê½°´Å¥£¬½øÈëÖ÷½çÃæ
+             * éšä¾¿çœ‹çœ‹æŒ‰é’®ç›‘å¬
              */
             guide_visitor_btn.setOnClickListener(new View.OnClickListener() {
                 @Override

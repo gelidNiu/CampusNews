@@ -43,7 +43,7 @@ public class Login4Activity extends BaseActivity {
     protected ImageView imageView32;
     protected EditText login4AccountEdit;
     protected EditText login4passwordEdit;
-    protected ImageView login4loginbutton;
+    protected Button login4loginbutton;
     protected Button login4RegisterButton;
     protected Button login4ForgetButton;
     protected String account;
@@ -59,14 +59,7 @@ public class Login4Activity extends BaseActivity {
         super.onCreate(savedInstanceState);
         requestWindowFeature(Window.FEATURE_NO_TITLE);
         setContentView(R.layout.login4_layout);
-        //imageView11 = (TextView) findViewById(R.id.login4img11);
-        //imageView12 = (ImageView) findViewById(R.id.login4img12);
-        //imageView13 = (ImageView) findViewById(R.id.login4img13);
-        //imageView21 = (ImageView) findViewById(R.id.login4img21);
-        //imageView22 = (ImageView) findViewById(R.id.login4img22);
-        //imageView31 = (ImageView) findViewById(R.id.login4img31);
-        //imageView32 = (ImageView) findViewById(R.id.login4img32);
-        login4loginbutton = (ImageView) findViewById(R.id.login4loginButton);
+        login4loginbutton = (Button) findViewById(R.id.login4loginButton);
         login4RegisterButton = (Button) findViewById(R.id.login4registerbutton);
         login4ForgetButton = (Button) findViewById(R.id.login4forgetbutton);
         login4AccountEdit = (EditText) findViewById(R.id.login4AccountEdit);
@@ -79,7 +72,6 @@ public class Login4Activity extends BaseActivity {
         ui_tools.CancelFocusOne(this, login4_all_layout, login4AccountEdit);
         ImageViewAnimation(); //这个方法负责初始化时，7张图片的动画效果
         //登录Button响应事件
-
         login4loginbutton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -103,7 +95,7 @@ public class Login4Activity extends BaseActivity {
                                 }catch (IOException e){
 
                                 }
-                                ToastTools.ToastShow(getString(R.string.signIn_OK));
+                                ToastTools.ToastShow(getString(R.string.signIn_OK));//登录成功
                                 string=ChangeToJSON(string);
                                 parseJSONObject(string);
                                 Log.d("response.body.string:" ,string);
@@ -112,7 +104,9 @@ public class Login4Activity extends BaseActivity {
                                 intent1.putExtra("response", String.valueOf(signInResponse));
                                 setResult(LOGIN4_REQUEST, intent1);
                                 PrefTools.setString(AppApplication.getContext(), "saved_account", account);
-                                finish();
+                                Intent intent=new Intent(Login4Activity.this,MainActivity.class);
+                                startActivity(intent);
+                                finish();//一定要记得销毁
                             } else if (signInResponse.code() == 401) {
                                 System.out.println("返回值为401");
                                 login4passwordEdit.setText("");
@@ -132,12 +126,13 @@ public class Login4Activity extends BaseActivity {
         login4RegisterButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                login4RegisterButton.setTextColor(0xFF003399);
+                //login4RegisterButton.setTextColor(0xFF003399);
                 Intent intent = new Intent(Login4Activity.this, registerActivity.class);
                 startActivity(intent);
                 //   Toast.makeText(Login4Activity.this, R.string.REGISTER,Toast.LENGTH_SHORT).show();
 
             }
+
         });
 
         //忘记密码Button响应事件
